@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+}
+
+.backgroundBox {
+  width: 1024px;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  background-image: url("../images/background.png");
+}
+
+.boxWrapper {
+  width: 808px;
+  height: 544px;
+  display: flex;
+  align-items: center;
+  background-image: url("../images/outerBox.png");
+  margin-left: 20px;
+}
+
+.boxContainerBox {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.boxContainerBox_bodyBox {
+  display: flex;
+  flex-direction: row;
+}
+
+.boxContainerBox_headerBox {
+  width: 96%;
+  height: 100%;
+  /* background-color: bisque; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 25px 0px 25px;
+}
+
+.leftContentsContainer {
+  width: 220px;
+  height: 430px;
+  background-color: white;
+  border: 1px solid gray;
+  margin: 0px 0px 10px 15px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.rightContentsContainer {
+  /* background-color: brown; */
+  width: 100%;
+  height: 100%;
+}
+
+.profileImageBoxContainer {
+  width: 100%;
+  height: 160px;
+  border-bottom: 2px dotted #808080be;
+}
+
+.imageHolder {
+  width: 148px;
+  height: 133px;
+  background-color: #c4c4c4;
+}
+
+.leftmainBox_profileInfoBox {
+  width: 100%;
+  height: 85%;
+  background-color: aliceblue;
+  margin-top: 10px;
+}
+
+.leftmainBox_TodayEmotionBox {
+  width: 100%;
+  height: 41px;
+  background-color: chartreuse;
+}
+
+.vistorsCounter {
+  width: 170px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 12px;
+  margin: 30px 0px 0px 0px;
+  color: #55b2d4;
+}
+
+.mainTitle {
+  width: 40%;
+  margin-right: 40px;
+  font-weight: 900;
+  color: #55b2d4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainTitle span {
+  text-align: center;
+  width: 100%;
+}
+
+.privateSetting {
+  width: 17%;
+  font-size: 13px;
+  color: #55b2d4;
+}
