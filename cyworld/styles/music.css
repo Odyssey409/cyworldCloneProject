@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 97%;
+  width: 99%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px 0px 15px;
+}
+
+.topContentBox {
+  width: 100%;
+}
+
+.blueTitle {
+  color: rgba(85, 178, 212, 1);
+  font-weight: 900;
+}
+
+.subtitleUpper {
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 900;
+  margin-left: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.divideLine {
+  width: 100%;
+  border-top: 1px solid rgba(153, 153, 153, 1);
+  margin-top: 10px;
+}
+
+.musicTop {
+  width: 100%;
+  margin-top: 7px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.albumsWrapper {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.albumBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.albumcover {
+  width: 120px;
+  height: 120px;
+}
+
+.albumTitle {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 11px;
+  color: rgba(15, 70, 94, 1);
+  font-weight: 700;
+  margin-top: 7px;
+}
+
+.albumArtist {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 10px;
+  color: rgba(153, 153, 153, 1);
+  font-weight: 700;
+  margin-top: 2px;
+}
+
+.musicBottom {
+  width: 100%;
+}
+
+.playlistWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.playlistMusicBox {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px dotted rgba(153, 153, 153, 1);
+  padding: 1px 0px 1px 20px;
+}
+
+.playlistCheckBox {
+  width: 12px;
+  height: 12px;
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(153, 153, 153, 1);
+}
+
+.playlistNumber {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  width: 10%;
+}
+
+.playlistMusicName {
+  width: 65%;
+  font-size: 10px;
+  color: rgba(15, 70, 94, 1);
+  font-weight: 600;
+}
+
+.playlistArtist {
+  width: 20%;
+  font-size: 10px;
+  color: rgba(15, 70, 94, 1);
+  font-weight: 600;
+}
+
+#playlistHeader {
+  border-bottom: 1px solid rgba(153, 153, 153, 1);
+  background-color: rgba(238, 238, 238, 1);
+}
+
+#headerNumber,
+#headerMusicName,
+#headerArtist {
+  color: rgba(153, 153, 153, 1);
+}
