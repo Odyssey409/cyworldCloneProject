@@ -5,6 +5,7 @@
     <link href="./styles/game.css" rel="stylesheet" />
   </head>
   <body>
+    <script src="./scripts/game.js"></script>
     <div class="topContentBox">
       <div class="topContentBoxTitle">
         <span class="blueTitle">GAME</span
@@ -16,13 +17,13 @@
       <img src="/cyworld/images/wordTrain.png" />
       <div class="gameTitle">끝말잇기</div>
       <div class="gameSubtitle">
-        <span>제시어 : </span><span>뉴비즈코드</span>
+        <span>제시어 : </span><span id="givenWord">뉴비즈코드</span>
       </div>
       <div class="wordInputBox">
         <input id="wordInput" placeholder="단어를 입력하세요." />
-        <button id="wordSubmitBtn">검색</button>
+        <button id="wordSubmitBtn" onclick="wordCheck()">제출</button>
       </div>
-      <div class="wordResult">결과!</div>
+      <div id="result" class="wordResult">결과!</div>
     </div>
     <div class="gameBox">
       <img src="/cyworld/images/lotto.png" />
