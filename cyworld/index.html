@@ -14,7 +14,7 @@
         <div class="boxContainerBox">
           <div class="boxContainerBox_headerBox">
             <div class="vistorsCounter">
-              <span>TODAY</span><span>0</span>
+              <span>TODAY</span><span id="dailyVisitorsNum">0</span>
               <span>|</span>
               <span>TOTAL</span>12345<span></span>
             </div>
@@ -22,7 +22,7 @@
               <span>사이좋은 사람들, 싸이월드</span>
             </div>
             <div class="privateSetting">
-              <span>사생활보호설정▶</span>
+              <span>사생활보호설정</span><span id="privateSettingArrow">▶</span>
             </div>
           </div>
           <div class="boxContainerBox_bodyBox">
@@ -30,7 +30,9 @@
               <div class="leftContents_mainBox">
                 <div class="profileImageBoxContainer">
                   <div class="imageHolder"></div>
+                  <div class="profileDivideLine"></div>
                 </div>
+
                 <div class="leftmainBox_profileInfoBox">
                   <div class="profile_name">
                     <i class="fa-regular fa-user"></i>
