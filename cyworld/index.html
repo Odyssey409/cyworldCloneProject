@@ -6,6 +6,7 @@
       src="https://kit.fontawesome.com/8c7573265d.js"
       crossorigin="anonymous"
     ></script>
+    <script src="./scripts/index.js"></script>
     <title>이우진님의 미니홈피 :: 사이좋은 사람들, 싸이월드</title>
   </head>
   <body>
@@ -65,8 +66,15 @@
               </div>
             </div>
             <div class="rightContentsContainer">
-              <iframe src="music.html"></iframe>
+              <iframe id="iframe_pages" src="home.html"></iframe>
             </div>
+          </div>
+          <div class="navigation">
+            <div class="menuBtn" id="menuHome" onclick="menuHome()">홈</div>
+            <div class="menuBtn" id="menuJukeBox" onclick="menuJukeBox()">
+              쥬크박스
+            </div>
+            <div class="menuBtn" id="menuGame" onclick="menuGame()">게임</div>
           </div>
         </div>
       </div>
