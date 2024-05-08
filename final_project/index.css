@@ -15,11 +15,91 @@ body {
   box-shadow: 7px 7px 39px 0px rgba(0, 104, 255, 0.25);
   display: flex;
   flex-direction: column;
-  padding: 60px 90px 40px 90px;
+  padding: 60px 80px 40px 80px;
 }
 
 .formTitle {
   font-size: 30px;
   color: rgba(0, 104, 255, 1);
   font-weight: 900;
+  margin-bottom: 40px;
+}
+
+.loginInfoInput {
+  width: 380px;
+  height: 60px;
+  border: 1px solid rgba(210, 210, 210, 1);
+  border-radius: 10px;
+  margin-top: 25px;
+  padding-left: 12px;
+  font-size: 14px;
+}
+
+.phoneNumInputBox {
+  display: flex;
+  width: 380px;
+  margin-top: 25px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.phoneNumInput {
+  width: 100px;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid rgba(210, 210, 210, 1);
+}
+
+.phoneNumDash {
+  font-size: 20px;
+  border-top: 1px solid black;
+  width: 11px;
+}
+
+.verifyNumBox {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+#verifyNumberSubmitBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 40px;
+  border: 1px solid rgba(210, 210, 210, 1);
+  border-radius: 8px;
+  font-size: 14px;
+  color: rgba(0, 104, 255, 1);
+  font-weight: bolder;
+  background-color: white;
+}
+
+#verifyNumber {
+  font-size: 18px;
+  color: rgba(0, 104, 255, 1);
+  margin-right: 10px;
+}
+
+#verifyCompleteBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 40px;
+  border: 1px solid rgba(210, 210, 210, 1);
+  border-radius: 8px;
+  font-size: 14px;
+  color: white;
+
+  background-color: rgba(0, 104, 255, 1);
+}
+
+#remainingTime {
+  font-size: 17px;
+  color: rgba(0, 104, 255, 1);
+  margin-right: 10px;
 }

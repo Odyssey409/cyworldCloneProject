@@ -12,7 +12,47 @@
   <body>
     <div class="formWrapper">
       <div class="formTitle">코드캠프 회원가입</div>
-      <div class="userInfoInputBox"></div>
+      <div class="userInfoInputBox">
+        <input
+          class="loginInfoInput"
+          placeholder="이메일을 입력해 주세요."
+          type="email"
+        />
+        <input
+          class="loginInfoInput"
+          placeholder="이름을 입력해 주세요."
+          type="text"
+        />
+        <input
+          class="loginInfoInput"
+          placeholder="비밀번호를 입력해 주세요."
+          type="password"
+        />
+        <input
+          class="loginInfoInput"
+          placeholder="비밀번호를 다시 입력해 주세요."
+          type="password"
+        />
+        <div class="phoneNumInputBox">
+          <input class="phoneNumInput" id="phoneNum1" />
+          <div class="phoneNumDash"></div>
+          <input class="phoneNumInput" id="phoneNum2" />
+          <div class="phoneNumDash"></div>
+          <input class="phoneNumInput" id="phoneNum3" />
+        </div>
+      </div>
+      <div class="verifyNumBox">
+        <div id="verifyNumber">000000</div>
+        <button id="verifyNumberSubmitBtn">인증번호 전송</button>
+      </div>
+      <div class="verifyNumBox">
+        <div id="remainingTime">
+          <span id="remainingMins">2</span>
+          <span>:</span>
+          <span id="remainingSecs">23</span>
+        </div>
+        <button id="verifyCompleteBtn">인증 완료</button>
+      </div>
       <div class="submitBtn"></div>
     </div>
   </body>
