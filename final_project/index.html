@@ -18,21 +18,31 @@
           placeholder="이메일을 입력해 주세요."
           type="email"
         />
+        <div class="errorMsg" id="emailErrorMsg">
+          이메일이 옳바르지 않습니다
+        </div>
         <input
           class="loginInfoInput"
           placeholder="이름을 입력해 주세요."
           type="text"
         />
+        <div class="errorMsg" id="nameErrorMsg">이름이 옳바르지 않습니다</div>
         <input
           class="loginInfoInput"
           placeholder="비밀번호를 입력해 주세요."
           type="password"
         />
+        <div class="errorMsg" id="passwordErrorMsg">
+          비밀번호를 입력해 주세요
+        </div>
         <input
           class="loginInfoInput"
           placeholder="비밀번호를 다시 입력해 주세요."
           type="password"
         />
+        <div class="errorMsg" id="passwordCheckErrorMsg">
+          비밀번호를 입력해 주세요
+        </div>
         <div class="phoneNumInputBox">
           <input class="phoneNumInput" id="phoneNum1" />
           <div class="phoneNumDash"></div>
@@ -53,7 +63,26 @@
         </div>
         <button id="verifyCompleteBtn">인증 완료</button>
       </div>
-      <div class="submitBtn"></div>
+      <select name="area" id="regionSelect">
+        <option selected disabled>지역을 선택하세요</option>
+        <option value="seoul">서울</option>
+        <option value="incheon">인천</option>
+        <option value="gyeonggi">경기</option>
+      </select>
+      <div class="userInfoInputBox">
+        <div class="errorMsg" id="regionSelectErrorMsg">
+          지역을 선택해 주세요
+        </div>
+        <form id="genderSelect">
+          <input type="radio" name="gender" value="women" /> 여성
+          <input type="radio" name="gender" value="men" /> 남성
+        </form>
+        <div class="errorMsg" id="genderSelectErrorMsg">
+          성별을 선택해 주세요
+        </div>
+      </div>
+      <div class="divideLine"></div>
+      <div class="submitBtn">가입하기</div>
     </div>
   </body>
 </html>

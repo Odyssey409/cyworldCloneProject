@@ -9,13 +9,13 @@ body {
 
 .formWrapper {
   width: 540px;
-  height: 960px;
+  height: 1000px;
   border: 1px solid rgba(170, 205, 255, 1);
   border-radius: 15px;
   box-shadow: 7px 7px 39px 0px rgba(0, 104, 255, 0.25);
   display: flex;
   flex-direction: column;
-  padding: 60px 80px 40px 80px;
+  padding: 50px 80px 0px 80px;
 }
 
 .formTitle {
@@ -25,12 +25,18 @@ body {
   margin-bottom: 40px;
 }
 
+.userInfoInputBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .loginInfoInput {
   width: 380px;
   height: 60px;
   border: 1px solid rgba(210, 210, 210, 1);
   border-radius: 10px;
-  margin-top: 25px;
+  margin-top: 20px;
   padding-left: 12px;
   font-size: 14px;
 }
@@ -102,4 +108,45 @@ body {
   font-size: 17px;
   color: rgba(0, 104, 255, 1);
   margin-right: 10px;
+}
+
+#regionSelect {
+  width: 380px;
+  height: 60px;
+  border: 1px solid rgba(210, 210, 210, 1);
+  border-radius: 10px;
+  color: rgba(121, 121, 121, 1);
+  padding-left: 10px;
+  font-size: 14px;
+}
+
+#genderSelect {
+  margin-top: 20px;
+}
+
+.errorMsg {
+  font-size: 10px;
+  color: rgb(226, 15, 15);
+  font-weight: 600;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.divideLine {
+  width: 380px;
+  border: 1px solid rgba(230, 230, 230, 1);
+  margin-top: 25px;
+}
+
+.submitBtn {
+  margin-top: 20px;
+  width: 380px;
+  height: 75px;
+  border: 1px solid rgba(0, 104, 255, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  color: rgba(0, 104, 255, 1);
+  font-family: Noto Sans CJK KR;
+  font-size: 18px;
 }
