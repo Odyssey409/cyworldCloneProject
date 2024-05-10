@@ -15,74 +15,99 @@
       <div class="userInfoInputBox">
         <input
           class="loginInfoInput"
+          id="loginEmail"
           placeholder="이메일을 입력해 주세요."
           type="email"
+          onchange="emailErrorCheck()"
         />
-        <div class="errorMsg" id="emailErrorMsg">
-          이메일이 옳바르지 않습니다
-        </div>
+        <div class="errorMsg" id="emailErrorMsg"></div>
         <input
           class="loginInfoInput"
+          id="loginName"
           placeholder="이름을 입력해 주세요."
           type="text"
+          onchange="nameErrorCheck()"
         />
-        <div class="errorMsg" id="nameErrorMsg">이름이 옳바르지 않습니다</div>
+        <div class="errorMsg" id="nameErrorMsg"></div>
         <input
           class="loginInfoInput"
+          id="loginPassword"
           placeholder="비밀번호를 입력해 주세요."
           type="password"
+          onchange="passwordErrorCheck()"
         />
-        <div class="errorMsg" id="passwordErrorMsg">
-          비밀번호를 입력해 주세요
-        </div>
+        <div class="errorMsg" id="passwordErrorMsg"></div>
         <input
           class="loginInfoInput"
+          id="loginPasswordCheck"
           placeholder="비밀번호를 다시 입력해 주세요."
           type="password"
+          onchange="passwordCheckErrorCheck()"
         />
-        <div class="errorMsg" id="passwordCheckErrorMsg">
-          비밀번호를 입력해 주세요
-        </div>
-        <div class="phoneNumInputBox">
-          <input class="phoneNumInput" id="phoneNum1" />
+        <div class="errorMsg" id="passwordCheckErrorMsg"></div>
+        <div id="phoneNumInputBox">
+          <input
+            oninput="phoneNumInputHandle()"
+            class="phoneNumInput"
+            id="phoneNum1"
+          />
           <div class="phoneNumDash"></div>
-          <input class="phoneNumInput" id="phoneNum2" />
+          <input
+            oninput="phoneNumInputHandle()"
+            class="phoneNumInput"
+            id="phoneNum2"
+          />
           <div class="phoneNumDash"></div>
-          <input class="phoneNumInput" id="phoneNum3" />
+          <input
+            oninput="phoneNumInputHandle()"
+            class="phoneNumInput"
+            id="phoneNum3"
+          />
         </div>
       </div>
       <div class="verifyNumBox">
         <div id="verifyNumber">000000</div>
-        <button id="verifyNumberSubmitBtn">인증번호 전송</button>
+        <button
+          id="verifyNumberSubmitBtn"
+          disabled
+          onclick="handleVerifyNumberSubmitBtn()"
+        >
+          인증번호 전송
+        </button>
       </div>
       <div class="verifyNumBox">
         <div id="remainingTime">
-          <span id="remainingMins">2</span>
+          <span id="remainingMins">0</span>
           <span>:</span>
-          <span id="remainingSecs">23</span>
+          <span id="remainingSecs">00</span>
         </div>
-        <button id="verifyCompleteBtn">인증 완료</button>
+        <button
+          disabled
+          id="verifyCompleteBtn"
+          onclick="handleVerifyComplete()"
+        >
+          인증 완료
+        </button>
       </div>
-      <select name="area" id="regionSelect">
-        <option selected disabled>지역을 선택하세요</option>
+      <select onchange="regionSelectErrorCheck()" name="area" id="regionSelect">
+        <option value="regionUnselected" selected disabled>
+          지역을 선택하세요
+        </option>
         <option value="seoul">서울</option>
         <option value="incheon">인천</option>
         <option value="gyeonggi">경기</option>
       </select>
       <div class="userInfoInputBox">
-        <div class="errorMsg" id="regionSelectErrorMsg">
-          지역을 선택해 주세요
-        </div>
-        <form id="genderSelect">
-          <input type="radio" name="gender" value="women" /> 여성
-          <input type="radio" name="gender" value="men" /> 남성
+        <div class="errorMsg" id="regionSelectErrorMsg"></div>
+        <form onchange="genderSelectErrorCheck()" id="genderSelect">
+          <input type="radio" name="gender" value="women" id="womenCheck" />
+          여성
+          <input type="radio" name="gender" value="men" id="menCheck" /> 남성
         </form>
-        <div class="errorMsg" id="genderSelectErrorMsg">
-          성별을 선택해 주세요
-        </div>
+        <div class="errorMsg" id="genderSelectErrorMsg"></div>
       </div>
       <div class="divideLine"></div>
-      <div class="submitBtn">가입하기</div>
+      <button id="submitBtn" onclick="handleSignUp()" disabled>가입하기</button>
     </div>
   </body>
 </html>

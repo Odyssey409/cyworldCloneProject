@@ -9,7 +9,7 @@ body {
 
 .formWrapper {
   width: 540px;
-  height: 1000px;
+  height: 980px;
   border: 1px solid rgba(170, 205, 255, 1);
   border-radius: 15px;
   box-shadow: 7px 7px 39px 0px rgba(0, 104, 255, 0.25);
@@ -41,7 +41,7 @@ body {
   font-size: 14px;
 }
 
-.phoneNumInputBox {
+#phoneNumInputBox {
   display: flex;
   width: 380px;
   margin-top: 25px;
@@ -79,9 +79,16 @@ body {
   border: 1px solid rgba(210, 210, 210, 1);
   border-radius: 8px;
   font-size: 14px;
-  color: rgba(0, 104, 255, 1);
   font-weight: bolder;
+  color: rgba(0, 104, 255, 1);
   background-color: white;
+  cursor: pointer;
+}
+
+#verifyNumberSubmitBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  color: gray;
 }
 
 #verifyNumber {
@@ -100,8 +107,15 @@ body {
   border-radius: 8px;
   font-size: 14px;
   color: white;
-
   background-color: rgba(0, 104, 255, 1);
+  cursor: pointer;
+}
+
+#verifyCompleteBtn:disabled {
+  opacity: 0.5;
+  background-color: white;
+  cursor: not-allowed;
+  color: gray;
 }
 
 #remainingTime {
@@ -137,7 +151,7 @@ body {
   margin-top: 25px;
 }
 
-.submitBtn {
+#submitBtn {
   margin-top: 20px;
   width: 380px;
   height: 75px;
@@ -149,4 +163,13 @@ body {
   color: rgba(0, 104, 255, 1);
   font-family: Noto Sans CJK KR;
   font-size: 18px;
+  cursor: pointer;
+}
+
+#submitBtn:disabled {
+  opacity: 0.5;
+  background-color: white;
+  color: gray;
+  border: 1px solid rgb(102, 102, 102);
+  cursor: not-allowed;
 }
